@@ -13,6 +13,8 @@ def divide(a, b):
     if b == 0:
         return "Error: Division by zero is undefined."
     return a / b
+def exponentiate(a, b):
+    return a ** b # Raise a to the power of b
 
 print("Simple Calculator")
 print("Choose an operation:")
@@ -20,6 +22,7 @@ print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
+print("5. Exponentiate ") # New option for exponentiation
 
 choice = input("Enter the number of your choice: ")
 
@@ -35,5 +38,7 @@ if choice in ['1', '2', '3', '4']:
         print(f"The result is: {multiply(num1, num2)}")
     elif choice == '4':
         print(f"The result is: {divide(num1, num2)}")
+    elif choice == '5'
+        print(f"the result is: {exponentiate(num1, num2)}")
 else:
     print("Invalid choice. Please restart the program.")
